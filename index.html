@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Allen Jay Incornal — Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;800&family=Inter:wght@300;500;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- Boot loader -->
+<div class="loader" id="loader">
+  <pre id="boot"></pre>
+  <div class="load-bar"><i id="loadFill"></i></div>
+  <span id="loadPct">0%</span>
+</div>
+
+<div class="progress"></div>
+<div class="cursor" id="cursor"></div>
+<canvas id="embers"></canvas>
+
+<!-- Side dot nav -->
+<nav class="dots" id="dots">
+  <a href="#home" data-t="Home"></a><a href="#about" data-t="About"></a><a href="#skills" data-t="Skills"></a>
+  <a href="#path" data-t="Path"></a><a href="#interests" data-t="Interests"></a><a href="#contact" data-t="Contact"></a>
+</nav>
+
+<main>
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <p class="mono gold reveal">&lt;hello world /&gt;</p>
+    <h1 class="name" id="name" aria-label="Allen Jay Incornal">
+      <span class="row" data-text="ALLEN JAY"></span>
+      <span class="row outline" data-text="INCORNAL"></span>
+    </h1>
+    <p class="role mono reveal">I'm into <span id="typed"></span><b class="caret">|</b></p>
+    <p class="sub reveal">BSIT student at Cebu Eastern College, ready to turn classroom knowledge into real-world experience.</p>
+    <div class="socials reveal">
+      <a class="icon-btn magnetic" href="mailto:yajixx03@gmail.com" aria-label="Gmail"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1.4 2L12 12.7 19.6 7H4.4ZM4 9v8h16V9l-8 6-8-6Z"/></svg></a>
+      <a class="icon-btn magnetic" href="https://web.facebook.com/Yajixx3#" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-1 .4-1.7 1.8-1.7H17V3.8c-.3 0-1.3-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.6H7.5v3.3h2.8V22h3.2Z"/></svg></a>
+      <a class="btn magnetic" href="#contact">Hire me →</a>
+    </div>
+  </div>
+  <div class="hero-right reveal">
+    <div class="frame"><div class="hex"><img src="pic.jpg" alt="Allen Jay Incornal" onerror="this.replaceWith(Object.assign(document.createElement('b'),{textContent:'AJ'}))"></div></div>
+    <span class="chip c1 mono">IT Student</span><span class="chip c2 mono">Problem Solver</span><span class="chip c3 mono">Team Player</span>
+  </div>
+</section>
+
+<div class="ticker"><div class="tick-track">
+  <span>IT SUPPORT</span><i>◆</i><span>COMPUTER SYSTEMS</span><i>◆</i><span>SOFTWARE DEVELOPMENT</span><i>◆</i><span>NETWORKING</span><i>◆</i><span>TROUBLESHOOTING</span><i>◆</i>
+  <span>IT SUPPORT</span><i>◆</i><span>COMPUTER SYSTEMS</span><i>◆</i><span>SOFTWARE DEVELOPMENT</span><i>◆</i><span>NETWORKING</span><i>◆</i><span>TROUBLESHOOTING</span><i>◆</i>
+</div></div>
+
+<!-- ABOUT -->
+<section class="sec about" id="about">
+  <h2 class="title reveal"><span>01</span> About Me</h2>
+  <div class="about-grid">
+    <p class="lead reveal">A motivated and responsible Information Technology student seeking opportunities to gain practical experience, improve technical skills, and apply classroom knowledge. Willing to learn new technologies, work with a team, and take on responsibilities to support personal and professional growth.</p>
+    <div class="stats reveal">
+      <div><b data-count="21">0</b><span>Years old</span></div>
+      <div><b data-count="5">0</b><span>Career interests</span></div>
+      <div><b data-count="4">0</b><span>Schools attended</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="sec skills" id="skills">
+  <h2 class="title reveal"><span>02</span> Skills</h2>
+  <div class="skill-wrap">
+    <div class="terminal reveal">
+      <div class="t-head"><i></i><i></i><i></i><span class="mono">technical_skills.sh</span></div>
+      <ul class="mono" id="termList">
+        <li>Basic computer operation and file management</li>
+        <li>Word processing and presentation tools</li>
+        <li>Basic computer troubleshooting</li>
+        <li>Problem-solving and logical thinking</li>
+        <li>Willingness to learn programming, databases, and networking</li>
+      </ul>
+    </div>
+    <div class="soft">
+      <h3 class="reveal">Personal Skills</h3>
+      <div class="pills">
+        <span class="pill tilt reveal">Communication & Teamwork</span><span class="pill tilt reveal">Time Management</span>
+        <span class="pill tilt reveal">Organization</span><span class="pill tilt reveal">Adaptability</span>
+        <span class="pill tilt reveal">Responsibility</span><span class="pill tilt reveal">Attention to Detail</span>
+        <span class="pill tilt reveal">Open to Feedback</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PATH: education stacking cards + academic timeline -->
+<section class="sec path" id="path">
+  <h2 class="title reveal"><span>03</span> My Path</h2>
+  <div class="path-grid">
+    <div class="stack">
+      <article class="s-card" style="--k:0"><em>NOW</em><h3>Bachelor of Science in Information Technology</h3><p>Cebu Eastern College INC. — College of Information Technology</p></article>
+      <article class="s-card" style="--k:1"><em>Senior High</em><h3>Pardo National Senior High School</h3></article>
+      <article class="s-card" style="--k:2"><em>Junior High</em><h3>Pardo National High School</h3></article>
+      <article class="s-card" style="--k:3"><em>Elementary</em><h3>Pardo Elementary School</h3></article>
+    </div>
+    <div class="timeline" id="timeline">
+      <h3 class="reveal">Academic Experience</h3>
+      <div class="t-line"><i id="tFill"></i></div>
+      <div class="t-item reveal">Participates in classroom activities and academic projects.</div>
+      <div class="t-item reveal">Works collaboratively with classmates to complete group assignments.</div>
+      <div class="t-item reveal">Develops knowledge of IT through coursework and practical activities.</div>
+      <div class="t-item reveal">Practices problem-solving and creative thinking in academic tasks.</div>
+    </div>
+  </div>
+</section>
+
+<!-- INTERESTS: expanding panels -->
+<section class="sec interests" id="interests">
+  <h2 class="title reveal"><span>04</span> Career Interests</h2>
+  <div class="panels reveal">
+    <div class="panel active"><b>01</b><h3>IT Support</h3><p>Helping people get their devices and systems working.</p></div>
+    <div class="panel"><b>02</b><h3>Computer Systems</h3><p>Understanding how hardware and software work together.</p></div>
+    <div class="panel"><b>03</b><h3>Software Development</h3><p>Learning to build useful programs and applications.</p></div>
+    <div class="panel"><b>04</b><h3>Networking</h3><p>Connecting devices and keeping them communicating.</p></div>
+    <div class="panel"><b>05</b><h3>Troubleshooting</h3><p>Finding root causes and fixing technical problems.</p></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="sec contact" id="contact">
+  <p class="mono gold reveal">&lt;let's connect /&gt;</p>
+  <a class="big-mail reveal" href="mailto:yajixx03@gmail.com">yajixx03@gmail.com</a>
+  <p class="reveal mono">📞 0992 306 6747</p>
+  <div class="socials reveal">
+    <a class="icon-btn magnetic" href="mailto:yajixx03@gmail.com" aria-label="Gmail"><svg viewBox="0 0 24 24"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1.4 2L12 12.7 19.6 7H4.4ZM4 9v8h16V9l-8 6-8-6Z"/></svg></a>
+    <a class="icon-btn magnetic" href="https://www.facebook.com/YOUR.PROFILE" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M13.5 22v-8.2h2.8l.5-3.3h-3.3V8.4c0-1 .4-1.7 1.8-1.7H17V3.8c-.3 0-1.3-.2-2.5-.2-2.5 0-4.2 1.5-4.2 4.3v2.6H7.5v3.3h2.8V22h3.2Z"/></svg></a>
+  </div>
+  <footer class="mono">© 2026 Allen Jay Incornal</footer>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
